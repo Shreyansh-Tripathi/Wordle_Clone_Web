@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(244, 244, 244);
+}
+
+.main-header{
+    border-bottom: 2px solid black;
+}
+
+.info-bar{
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+.main-container{
+    flex-direction: column;
+}
+
+.letter-container{
+    margin: 0 1rem 2rem 1rem;
+    width: 4rem;
+    height: 4rem;
+    padding: .1rem .1rem .1rem .4rem;
+    border: 4px solid rgb(164, 161, 161);
+    pointer-events: none;
+}
+
+.letter-container:focus{
+    outline-width: 0px;
+    caret-color: transparent;
+    pointer-events: none;
+}
+
+@keyframes flash {
+    5% {
+        border-color: crimson;
+    }
+
+    100% {
+        border-color: rgb(164, 161, 161);
+    }
+}
+
+.invalid{
+    animation: flash 1s;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.spiral{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes win-glow {
+    5% {
+        color: crimson;
+    }
+
+    25% {
+        color: rgb(20, 50, 220);
+    }
+
+    50% {
+        color: rgb(193, 20, 220);
+    }
+
+    75% {
+        color: rgb(220, 220, 20);
+    }
+
+    100% {
+        color: rgb(164, 161, 161);
+    }
+}
+
+.win-text{
+    animation: win-glow 4s linear infinite;
+}
