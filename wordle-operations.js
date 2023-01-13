@@ -89,8 +89,8 @@ async function checkAns() {
     }
 }
 
-function showAlert(params) {
-    alert(params);
+async function showAlert(params) {
+    setTimeout(()=> alert(params),100);
 }
 
   
