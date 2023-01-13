@@ -1,0 +1,1 @@
+Basic Wordle Clone made using HTML, CSS and Javascript, it uses Word-API to fetch word and validate the input word.
